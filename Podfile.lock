@@ -1,0 +1,40 @@
+PODS:
+  - Coordinators (2.0.7):
+    - RxSwift
+  - RandomKit (5.2.3):
+    - ShiftOperations (~> 1.0.2)
+    - Threadly (~> 1.0)
+  - RxSwift (6.2.0)
+  - ShiftOperations (1.0.2)
+  - Threadly (1.2.0)
+
+DEPENDENCIES:
+  - Coordinators (= 2.0.7)
+  - RandomKit (from `https://github.com/Dorofeev/RandomKit.git`)
+
+SPEC REPOS:
+  trunk:
+    - Coordinators
+    - RxSwift
+    - ShiftOperations
+    - Threadly
+
+EXTERNAL SOURCES:
+  RandomKit:
+    :git: https://github.com/Dorofeev/RandomKit.git
+
+CHECKOUT OPTIONS:
+  RandomKit:
+    :commit: 574b3b8b5e281e474c11d6e380c0e0fe748fec18
+    :git: https://github.com/Dorofeev/RandomKit.git
+
+SPEC CHECKSUMS:
+  Coordinators: 38fbe12dc21e0e870b41fd2a581196dab796037b
+  RandomKit: e1ca01dea55913637cea96e25b3dffd37bdb674d
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  ShiftOperations: 702c9aa98d3b20d98dceb71dd8437b562f7ab3ad
+  Threadly: b772ed7c1ff4a3f03eb4600bbc5ef83b3be5cb29
+
+PODFILE CHECKSUM: 441dc3d9ae1f77b3a51e69728c66dc80e8e563cc
+
+COCOAPODS: 1.10.2
