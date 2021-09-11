@@ -10,5 +10,11 @@ import Foundation
 import UIKit
 
 class RandomRootCoordinator: UICoordinator {
-    
+    init(window: UIWindow?) {
+        let nav = UINavigationController(
+            rootViewController: RandomRootViewController(viewModel: RandomRootViewModel())
+        )
+        window?.rootViewController = nav
+        super.init(navigationController: nav)
+    }
 }

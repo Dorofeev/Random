@@ -16,10 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let nav = UINavigationController(
-            rootViewController: RandomRootViewController(viewModel: RandomRootViewModel())
-        )
-        window?.rootViewController = nav
+        
+        let coordinator = RandomRootCoordinator(window: window)
         
         print(Randomizer().randomRandom())
         let color = Randomizer().randomColor()
