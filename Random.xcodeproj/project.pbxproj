@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		492B16BB26D8ADA800E3523E /* RandomColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B16BA26D8ADA800E3523E /* RandomColorViewController.swift */; };
 		492B16BE26D8B2F700E3523E /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B16BD26D8B2F700E3523E /* Randomizer.swift */; };
+		494B7A5A26FB468F0089F045 /* RandomNumberCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B7A5926FB468F0089F045 /* RandomNumberCoordinator.swift */; };
+		494B7A5C26FB474C0089F045 /* RandomNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B7A5B26FB474C0089F045 /* RandomNumberViewModel.swift */; };
 		49850CC526E658F200AE8C2F /* RandomCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49850CC426E658F200AE8C2F /* RandomCategoryTableViewCell.swift */; };
 		4996AF2A26D787B9002674DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996AF2926D787B9002674DB /* AppDelegate.swift */; };
 		4996AF3126D787B9002674DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4996AF2F26D787B9002674DB /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		492B16BA26D8ADA800E3523E /* RandomColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorViewController.swift; sourceTree = "<group>"; };
 		492B16BD26D8B2F700E3523E /* Randomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
+		494B7A5926FB468F0089F045 /* RandomNumberCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberCoordinator.swift; sourceTree = "<group>"; };
+		494B7A5B26FB474C0089F045 /* RandomNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberViewModel.swift; sourceTree = "<group>"; };
 		49850CC426E658F200AE8C2F /* RandomCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		4996AF2626D787B9002674DB /* Random.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Random.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4996AF2926D787B9002674DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 		492B16B926D8A79600E3523E /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				494B7A5826FB46730089F045 /* RandomNumber */,
 				49A9EBCC26E3A9850023EF21 /* RandomRoot */,
 				492B16BA26D8ADA800E3523E /* RandomColorViewController.swift */,
 			);
@@ -68,6 +73,15 @@
 				492B16BD26D8B2F700E3523E /* Randomizer.swift */,
 			);
 			path = Randomizer;
+			sourceTree = "<group>";
+		};
+		494B7A5826FB46730089F045 /* RandomNumber */ = {
+			isa = PBXGroup;
+			children = (
+				494B7A5926FB468F0089F045 /* RandomNumberCoordinator.swift */,
+				494B7A5B26FB474C0089F045 /* RandomNumberViewModel.swift */,
+			);
+			path = RandomNumber;
 			sourceTree = "<group>";
 		};
 		49850CC626E65C2400AE8C2F /* Cell */ = {
@@ -272,7 +286,9 @@
 			files = (
 				49A9EBDE26E524900023EF21 /* RandomRootViewModel.swift in Sources */,
 				492B16BE26D8B2F700E3523E /* Randomizer.swift in Sources */,
+				494B7A5C26FB474C0089F045 /* RandomNumberViewModel.swift in Sources */,
 				49850CC526E658F200AE8C2F /* RandomCategoryTableViewCell.swift in Sources */,
+				494B7A5A26FB468F0089F045 /* RandomNumberCoordinator.swift in Sources */,
 				49A9EBDC26E3AEF10023EF21 /* RandomRootView.swift in Sources */,
 				49A9EBD226E3A9BB0023EF21 /* RandomRootViewController.swift in Sources */,
 				492B16BB26D8ADA800E3523E /* RandomColorViewController.swift in Sources */,
