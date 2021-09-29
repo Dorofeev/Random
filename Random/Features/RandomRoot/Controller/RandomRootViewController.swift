@@ -8,12 +8,22 @@
 import Coordinators
 import UIKit
 
+protocol RandomRootRoutesDelegate: AnyObject {
+    func routeToRandomNumber()
+}
+
 class RandomRootViewController
 : CTableViewController<
     RandomRootView,
     RandomRootViewModel,
     RandomCategoryTableViewCell
 > {
+    
+    weak var routesDelegate: RandomRootRoutesDelegate? {
+        didSet {
+            viewModel.routesDelegate = routesDelegate
+        }
+    }
     
     override func loadView() {
         view = RandomRootView()

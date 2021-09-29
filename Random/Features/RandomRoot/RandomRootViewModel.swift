@@ -13,31 +13,13 @@ struct RandomCategory {
     let name: String
     let id: String
     let onSelected: () -> Void
-    
-    static func createCategories() -> [RandomCategory] {
-        return [
-            RandomCategory(
-                name: "Random Number",
-                id: "number",
-                onSelected: { }
-            ),
-            RandomCategory(
-                name: "Random Color",
-                id: "color",
-                onSelected: { }
-            ),
-            RandomCategory(
-                name: "Full Random",
-                id: "full",
-                onSelected: { }
-            )
-        ]
-    }
 }
 
 class RandomRootViewModel: ListViewModel {
     
-    var sections: [RandomSection]
+    var sections: [RandomSection] = []
+    
+    weak var routesDelegate: RandomRootRoutesDelegate?
     
     typealias Item = RandomCategory
     typealias Section = RandomSection
@@ -51,12 +33,34 @@ class RandomRootViewModel: ListViewModel {
         sections = [
             RandomSection(
                 title: "",
-                items: RandomCategory.createCategories()
+                items: createCategories()
             )
         ]
     }
     
     required init(sections: [Section]) {
         self.sections = sections
+    }
+    
+    func createCategories() -> [RandomCategory] {
+        return [
+            RandomCategory(
+                name: "Random Number",
+                id: "number",
+                onSelected: { [weak self] in
+                    self?.routesDelegate?.routeToRandomNumber()
+                }
+            ),
+            RandomCategory(
+                name: "Random Color",
+                id: "color",
+                onSelected: { }
+            ),
+            RandomCategory(
+                name: "Full Random",
+                id: "full",
+                onSelected: { }
+            )
+        ]
     }
 }

@@ -11,10 +11,19 @@ import UIKit
 
 class RandomRootCoordinator: UICoordinator {
     init(window: UIWindow?) {
+        
+        let randomRootController = RandomRootViewController(viewModel: RandomRootViewModel())
         let nav = UINavigationController(
-            rootViewController: RandomRootViewController(viewModel: RandomRootViewModel())
+            rootViewController: randomRootController
         )
         window?.rootViewController = nav
         super.init(navigationController: nav)
+        randomRootController.routesDelegate = self
+    }
+}
+
+extension RandomRootCoordinator: RandomRootRoutesDelegate {
+    func routeToRandomNumber() {
+        print("routeToRandomNumber")
     }
 }
