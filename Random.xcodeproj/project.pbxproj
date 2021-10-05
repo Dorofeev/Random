@@ -21,6 +21,8 @@
 		49A9EBDA26E3ADCA0023EF21 /* RandomRootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9EBD926E3ADCA0023EF21 /* RandomRootCoordinator.swift */; };
 		49A9EBDC26E3AEF10023EF21 /* RandomRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9EBDB26E3AEF10023EF21 /* RandomRootView.swift */; };
 		49A9EBDE26E524900023EF21 /* RandomRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9EBDD26E524900023EF21 /* RandomRootViewModel.swift */; };
+		49D4CFC4270C649B00F85867 /* RandomNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D4CFC3270C649B00F85867 /* RandomNumberView.swift */; };
+		49D4CFC7270C666600F85867 /* CViewController+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D4CFC6270C666600F85867 /* CViewController+SwiftUI.swift */; };
 		841726E0C83FBC92BC892D81 /* Pods_Random.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C839DC289AA14EBA810231A0 /* Pods_Random.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		49A9EBDB26E3AEF10023EF21 /* RandomRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRootView.swift; sourceTree = "<group>"; };
 		49A9EBDD26E524900023EF21 /* RandomRootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRootViewModel.swift; sourceTree = "<group>"; };
 		49B8DA0526EB51D900DC3380 /* Random.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Random.entitlements; sourceTree = "<group>"; };
+		49D4CFC3270C649B00F85867 /* RandomNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberView.swift; sourceTree = "<group>"; };
+		49D4CFC6270C666600F85867 /* CViewController+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CViewController+SwiftUI.swift"; sourceTree = "<group>"; };
 		9193266DA630D5ECB02757E0 /* Pods-Random.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Random.release.xcconfig"; path = "Target Support Files/Pods-Random/Pods-Random.release.xcconfig"; sourceTree = "<group>"; };
 		C3F368B1CD5D9CA6659861F3 /* Pods-Random.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Random.debug.xcconfig"; path = "Target Support Files/Pods-Random/Pods-Random.debug.xcconfig"; sourceTree = "<group>"; };
 		C839DC289AA14EBA810231A0 /* Pods_Random.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Random.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				494B7A5E26FC99400089F045 /* RandomNumberViewController.swift */,
+				49D4CFC3270C649B00F85867 /* RandomNumberView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			children = (
 				49B8DA0526EB51D900DC3380 /* Random.entitlements */,
 				4996AF2926D787B9002674DB /* AppDelegate.swift */,
+				49D4CFC5270C665300F85867 /* Extensions */,
 				49A9EBCB26E3A9240023EF21 /* Resources */,
 				492B16BC26D8AE1300E3523E /* Randomizer */,
 				492B16B926D8A79600E3523E /* Features */,
@@ -162,6 +168,14 @@
 				49A9EBDB26E3AEF10023EF21 /* RandomRootView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		49D4CFC5270C665300F85867 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				49D4CFC6270C666600F85867 /* CViewController+SwiftUI.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		674747519CFC455EAE020B7D /* Pods */ = {
@@ -304,7 +318,9 @@
 				49A9EBDC26E3AEF10023EF21 /* RandomRootView.swift in Sources */,
 				49A9EBD226E3A9BB0023EF21 /* RandomRootViewController.swift in Sources */,
 				492B16BB26D8ADA800E3523E /* RandomColorViewController.swift in Sources */,
+				49D4CFC7270C666600F85867 /* CViewController+SwiftUI.swift in Sources */,
 				49A9EBDA26E3ADCA0023EF21 /* RandomRootCoordinator.swift in Sources */,
+				49D4CFC4270C649B00F85867 /* RandomNumberView.swift in Sources */,
 				4996AF2A26D787B9002674DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

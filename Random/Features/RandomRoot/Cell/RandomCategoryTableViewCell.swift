@@ -34,6 +34,7 @@ class RandomCategoryTableViewCell: CTableViewCell<RandomCategory> {
     override func setupLayout() {
         super.setupLayout()
         selectionStyle = .none
+        contentView.isUserInteractionEnabled = false
         
         addSubview(categoryButton)
         NSLayoutConstraint.activate([

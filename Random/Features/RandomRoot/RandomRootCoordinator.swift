@@ -24,6 +24,7 @@ class RandomRootCoordinator: UICoordinator {
 
 extension RandomRootCoordinator: RandomRootRoutesDelegate {
     func routeToRandomNumber() {
-        print("routeToRandomNumber")
+        let randomNumberCoordinator = RandomNumberCoordinator(navigationController: navigationController)
+        randomNumberCoordinator.start(with: self)
     }
 }

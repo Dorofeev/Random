@@ -10,8 +10,6 @@ import Foundation
 import UIKit
 
 class RandomNumberCoordinator: UICoordinator {
-    override init(navigationController: UINavigationController) {
-        super.init(navigationController: navigationController)
-        // push RandomNumberController
-    }
+    private let randomNumberController = RandomNumberViewController()
+    override var rootViewController: UIViewController { get { randomNumberController } set {  } }
 }

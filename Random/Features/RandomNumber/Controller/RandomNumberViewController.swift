@@ -6,13 +6,20 @@
 //
 
 import Coordinators
+import SwiftUI
 import UIKit
 
 class RandomNumberViewController: CViewController {
     
-    override func setupStrings() {
-        super.setupStrings()
-        self.navigationController?.navigationItem.title = "Random Number"
+    override func loadView() {
+        super.loadView()
+        let subview = RandomNumberView()
+        addSwiftUIChild(subview)
     }
     
+    override func setupStrings() {
+        super.setupStrings()
+        self.navigationItem.title = "Random Number"
+    }
+   
 }

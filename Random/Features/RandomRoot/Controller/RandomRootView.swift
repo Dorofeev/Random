@@ -34,4 +34,8 @@ class RandomRootView: UIView, TableViewHolder {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func setupTableDelegate(_ delegate: UITableViewDelegate) {
+        tableView.delegate = delegate
+    }
 }
