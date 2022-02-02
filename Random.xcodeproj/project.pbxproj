@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4925613B27A83E580067FF91 /* dinosaur-23166_1280.png in Resources */ = {isa = PBXBuildFile; fileRef = 4925613A27A83E580067FF91 /* dinosaur-23166_1280.png */; };
 		492B16BB26D8ADA800E3523E /* RandomColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B16BA26D8ADA800E3523E /* RandomColorViewController.swift */; };
 		492B16BE26D8B2F700E3523E /* Randomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B16BD26D8B2F700E3523E /* Randomizer.swift */; };
 		494B7A5A26FB468F0089F045 /* RandomNumberCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B7A5926FB468F0089F045 /* RandomNumberCoordinator.swift */; };
 		494B7A5C26FB474C0089F045 /* RandomNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B7A5B26FB474C0089F045 /* RandomNumberViewModel.swift */; };
 		494B7A5F26FC99400089F045 /* RandomNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B7A5E26FC99400089F045 /* RandomNumberViewController.swift */; };
+		497212282758BC710098DAD0 /* SimpleURLConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497212272758BC710098DAD0 /* SimpleURLConnections.swift */; };
+		4972122A2758C36A0098DAD0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497212292758C3690098DAD0 /* NetworkManager.swift */; };
 		49850CC526E658F200AE8C2F /* RandomCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49850CC426E658F200AE8C2F /* RandomCategoryTableViewCell.swift */; };
 		4996AF2A26D787B9002674DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996AF2926D787B9002674DB /* AppDelegate.swift */; };
 		4996AF3126D787B9002674DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4996AF2F26D787B9002674DB /* Main.storyboard */; };
@@ -27,11 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4925613A27A83E580067FF91 /* dinosaur-23166_1280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dinosaur-23166_1280.png"; sourceTree = "<group>"; };
 		492B16BA26D8ADA800E3523E /* RandomColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorViewController.swift; sourceTree = "<group>"; };
 		492B16BD26D8B2F700E3523E /* Randomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomizer.swift; sourceTree = "<group>"; };
 		494B7A5926FB468F0089F045 /* RandomNumberCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberCoordinator.swift; sourceTree = "<group>"; };
 		494B7A5B26FB474C0089F045 /* RandomNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberViewModel.swift; sourceTree = "<group>"; };
 		494B7A5E26FC99400089F045 /* RandomNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberViewController.swift; sourceTree = "<group>"; };
+		497212272758BC710098DAD0 /* SimpleURLConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleURLConnections.swift; sourceTree = "<group>"; };
+		497212292758C3690098DAD0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		49850CC426E658F200AE8C2F /* RandomCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCategoryTableViewCell.swift; sourceTree = "<group>"; };
 		4996AF2626D787B9002674DB /* Random.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Random.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4996AF2926D787B9002674DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 		492B16B926D8A79600E3523E /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				497212252758BB000098DAD0 /* RunLoop */,
 				494B7A5826FB46730089F045 /* RandomNumber */,
 				49A9EBCC26E3A9850023EF21 /* RandomRoot */,
 				492B16BA26D8ADA800E3523E /* RandomColorViewController.swift */,
@@ -98,6 +105,15 @@
 				49D4CFC3270C649B00F85867 /* RandomNumberView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		497212252758BB000098DAD0 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				497212272758BC710098DAD0 /* SimpleURLConnections.swift */,
+				497212292758C3690098DAD0 /* NetworkManager.swift */,
+			);
+			path = RunLoop;
 			sourceTree = "<group>";
 		};
 		49850CC626E65C2400AE8C2F /* Cell */ = {
@@ -144,6 +160,7 @@
 			children = (
 				4996AF2F26D787B9002674DB /* Main.storyboard */,
 				4996AF3226D787BC002674DB /* Assets.xcassets */,
+				4925613A27A83E580067FF91 /* dinosaur-23166_1280.png */,
 				4996AF3426D787BC002674DB /* LaunchScreen.storyboard */,
 				4996AF3726D787BC002674DB /* Info.plist */,
 			);
@@ -254,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4925613B27A83E580067FF91 /* dinosaur-23166_1280.png in Resources */,
 				4996AF3626D787BC002674DB /* LaunchScreen.storyboard in Resources */,
 				4996AF3326D787BC002674DB /* Assets.xcassets in Resources */,
 				4996AF3126D787B9002674DB /* Main.storyboard in Resources */,
@@ -320,6 +338,8 @@
 				492B16BB26D8ADA800E3523E /* RandomColorViewController.swift in Sources */,
 				49D4CFC7270C666600F85867 /* CViewController+SwiftUI.swift in Sources */,
 				49A9EBDA26E3ADCA0023EF21 /* RandomRootCoordinator.swift in Sources */,
+				497212282758BC710098DAD0 /* SimpleURLConnections.swift in Sources */,
+				4972122A2758C36A0098DAD0 /* NetworkManager.swift in Sources */,
 				49D4CFC4270C649B00F85867 /* RandomNumberView.swift in Sources */,
 				4996AF2A26D787B9002674DB /* AppDelegate.swift in Sources */,
 			);
@@ -471,13 +491,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Random/Random.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZHL6FF2YWL;
+				DEVELOPMENT_TEAM = 9A86K97T2P;
 				INFOPLIST_FILE = Random/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dorofeev.Random;
+				PRODUCT_BUNDLE_IDENTIFIER = kormak.Random;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
@@ -493,13 +513,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Random/Random.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZHL6FF2YWL;
+				DEVELOPMENT_TEAM = 9A86K97T2P;
 				INFOPLIST_FILE = Random/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dorofeev.Random;
+				PRODUCT_BUNDLE_IDENTIFIER = kormak.Random;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
