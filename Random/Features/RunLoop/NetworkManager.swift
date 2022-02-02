@@ -70,4 +70,9 @@ class NetworkManager {
             return nil
         }
     }
+    
+    func pathForTemporaryFile(with prefix: String) -> String {
+        let uuid = UUID().uuidString
+        return FileManager.default.temporaryDirectory.appendingPathComponent("\(prefix)-\(uuid)").absoluteString
+    }
 }
