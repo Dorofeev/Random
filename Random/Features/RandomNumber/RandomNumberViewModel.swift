@@ -18,12 +18,10 @@ class RandomNumberViewModel {
     let minValue = BehaviorSubject<Int>(value: initialMinValue)
     let maxValue = BehaviorSubject<Int>(value: initialMaxValue)
     
-    private let generator = Randomizer()
-    
     let currentValue: BehaviorSubject<Int>
     
     init() {
-        let generatedNumber = generator.randomNumber(min: initialMinValue, max: initialMaxValue)
+        let generatedNumber = Randomizer.randomNumber(min: initialMinValue, max: initialMaxValue)
         currentValue = BehaviorSubject(value: generatedNumber)
     }
     
@@ -39,7 +37,7 @@ class RandomNumberViewModel {
         guard let min = try? minValue.value(), let max = try? maxValue.value() else {
             fatalError("no min max value")
         }
-        let generatedNumber = generator.randomNumber(min: min, max: max)
+        let generatedNumber = Randomizer.randomNumber(min: min, max: max)
         currentValue.on(.next(generatedNumber))
     }
 }

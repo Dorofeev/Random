@@ -11,15 +11,15 @@ import RandomKit
 
 class Randomizer {
     
-    func randomColor() -> UIColor {
+    static func randomColor() -> UIColor {
         return UIColor.random(using: &Xoroshiro.default)
     }
     
-    func randomNumber(min: Int = 0, max: Int = 100) -> Int {
+    static func randomNumber(min: Int = 0, max: Int = 100) -> Int {
         return Int.random(in: min...max, using: &Xoroshiro.default)
     }
     
-    func randomRandom() -> Int {
+    static func randomRandom() -> Int {
         var count = 0
         while true {
             count += 1

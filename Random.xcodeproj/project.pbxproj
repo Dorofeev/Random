@@ -230,6 +230,8 @@
 			dependencies = (
 			);
 			name = Random;
+			packageProductDependencies = (
+			);
 			productName = Random;
 			productReference = 4996AF2626D787B9002674DB /* Random.app */;
 			productType = "com.apple.product-type.application";
@@ -257,6 +259,8 @@
 				Base,
 			);
 			mainGroup = 4996AF1D26D787B9002674DB;
+			packageReferences = (
+			);
 			productRefGroup = 4996AF2726D787B9002674DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -492,6 +496,7 @@
 				CODE_SIGN_ENTITLEMENTS = Random/Random.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9A86K97T2P;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = Random/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -500,6 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kormak.Random;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

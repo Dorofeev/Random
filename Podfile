@@ -10,5 +10,6 @@ target 'Random' do
 
 pod 'RandomKit', :git => 'https://github.com/Dorofeev/RandomKit.git'
 pod 'Coordinators', '2.0.7'
+pod 'SwiftSoup'
 
 end

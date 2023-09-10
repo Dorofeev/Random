@@ -6,17 +6,20 @@ PODS:
     - Threadly (~> 1.0)
   - RxSwift (6.2.0)
   - ShiftOperations (1.0.2)
+  - SwiftSoup (2.5.3)
   - Threadly (1.2.0)
 
 DEPENDENCIES:
   - Coordinators (= 2.0.7)
   - RandomKit (from `https://github.com/Dorofeev/RandomKit.git`)
+  - SwiftSoup
 
 SPEC REPOS:
   trunk:
     - Coordinators
     - RxSwift
     - ShiftOperations
+    - SwiftSoup
     - Threadly
 
 EXTERNAL SOURCES:
@@ -33,8 +36,9 @@ SPEC CHECKSUMS:
   RandomKit: e1ca01dea55913637cea96e25b3dffd37bdb674d
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   ShiftOperations: 702c9aa98d3b20d98dceb71dd8437b562f7ab3ad
+  SwiftSoup: 33e8d374021a6c332788f78fa29a93227d8a7699
   Threadly: b772ed7c1ff4a3f03eb4600bbc5ef83b3be5cb29
 
-PODFILE CHECKSUM: 441dc3d9ae1f77b3a51e69728c66dc80e8e563cc
+PODFILE CHECKSUM: 661885940e9121a7c2c2e169b4f0dda551f48bb8
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.11.3

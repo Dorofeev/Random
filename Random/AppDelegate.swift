@@ -20,12 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         coordinator = RandomRootCoordinator(window: window)
         
-        print(Randomizer().randomRandom())
-        let color = Randomizer().randomColor()
-        color.cgColor.components?.forEach({ it in
-            print(it * 255)
-        })
-        
         return true
     }
 }
